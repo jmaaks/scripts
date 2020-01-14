@@ -7,7 +7,7 @@
 #
 # Source: https://oracle-base.com/articles/19c/oracle-db-19c-installation-on-fedora-31
 #
-# sudo bash -c "bash <(wget -qO- https://raw.githubusercontent.com/jmaaks/Simora/master/oracle-setup.sh)"
+# sudo bash -c "bash <(wget -qO- https://raw.githubusercontent.com/jmaaks/scripts/master/oracle-setup.sh)"
 #######################################################################################
 
 if [[ $EUID -ne 0 ]]; then
@@ -58,7 +58,7 @@ EOF
 dnf install -y bc    
 dnf install -y binutils
 #yum install -y compat-libcap1
-dnf install -y compat-libstdc++-33
+dnf install -y compat-libstdc++-33   # not found
 #yum install -y dtrace-modules
 #yum install -y dtrace-modules-headers
 #yum install -y dtrace-modules-provider-headers
@@ -88,7 +88,7 @@ dnf install -y net-tools # Clusterware
 dnf install -y nfs-utils # ACFS
 dnf install -y python # ACFS
 dnf install -y python-configshell # ACFS
-dnf install -y python-rtslib # ACFS
+dnf install -y python-rtslib # ACFS     # not found
 dnf install -y python-six # ACFS
 dnf install -y targetcli # ACFS
 dnf install -y smartmontools
