@@ -143,7 +143,7 @@ cat > /home/oracle/scripts/setEnv.sh <<EOF
 export TMP=/tmp
 export TMPDIR=\$TMP
 
-export ORACLE_HOSTNAME=fedora31.localdomain
+export ORACLE_HOSTNAME=oracle.lan
 export ORACLE_UNQNAME=cdb1
 export ORACLE_BASE=/u01/app/oracle
 export ORACLE_HOME=\$ORACLE_BASE/product/19.0.0/dbhome_1
